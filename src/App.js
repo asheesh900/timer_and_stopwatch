@@ -7,6 +7,9 @@ function App() {
   return (
     <div className="m-auto">
       <StopWatch />
+      <br />
+      <br />
+      <br />
       <hr></hr>
       <Timer />
     </div>

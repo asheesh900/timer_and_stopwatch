@@ -70,7 +70,8 @@ export default class StopWatch extends Component {
 
     render() {
         return (
-            <div className="container bg-dark text-white text-center">
+            <div className="container bg-dark text-white text-center mt-4">
+                <h1>TIMER</h1>
                 <div className="row">
                     <div className="col-2"></div>
                     <div className="col-2">
