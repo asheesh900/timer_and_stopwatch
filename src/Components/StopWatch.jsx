@@ -71,7 +71,7 @@ export default class StopWatch extends Component {
     render() {
         return (
             <div className="container bg-dark text-white text-center mt-4">
-                <h1>TIMER</h1>
+                <h1>STOPWATCH</h1>
                 <div className="row">
                     <div className="col-2"></div>
                     <div className="col-2">
@@ -99,7 +99,7 @@ export default class StopWatch extends Component {
                                     <button onClick={this.startStopWatch}>Start</button>
                             )
                         }
-                        <button onClick={this.resetStopWatch}>Resert</button>
+                        <button onClick={this.resetStopWatch}>Reset</button>
                     </div>
                 </div>
             </div>

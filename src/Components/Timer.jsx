@@ -58,7 +58,7 @@ export default class Timer extends Component {
     render() {
         return (
             <div className="text-center">
-                <h1>STOPWATCH</h1>
+                <h1>TIMER</h1>
                 <input value={this.state.enteredVal} onChange={(event) => this.inputFunction(event)} type="text" placeholder="Enter the seconds"></input>
                 <h1>{this.state.seconds} </h1>
                 {
