@@ -20,9 +20,12 @@ export default class Timer extends Component {
     }
 
     tick = () => {
-        this.setState({
-            seconds: this.state.seconds - 1
-        })
+        if(this.state.seconds > 0) {
+            this.setState({
+                seconds: this.state.seconds - 1
+            })
+        }
+
         if(this.state.seconds === 0)
          {
             clearInterval(this.timerID)
@@ -47,12 +50,13 @@ export default class Timer extends Component {
         })
     }
 
-    resetTimer = () => {
+    resetTimer = (event) => {
         clearInterval(this.timerID)
         this.setState({
             isStart: false,
             seconds:0
         })
+
     }
     
     render() {
